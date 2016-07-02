@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Guessing Game</title>
+</head>
+<body>
+  <h1>Guessing Questions</h1>
+
+<script type="text/javascript">
+  var userName = prompt("What is your name?");
+  alert("Nice to meet you " + userName + " lets play!");
+  var brothers = prompt("Guess how many brothers do I have? between 1 and 5:","");
+  if (brothers == 3) {
+    alert("Great Job");
+  } else {
+    alert("Try again");
+  }
+  var sisters = prompt ("How many sisters do I have? between 1 and 7:","");
+  if (sisters == 5) {
+    alert("Great job");
+  } else {
+    alert("Try again");
+  }
+  var cats = prompt("How many children do I have? beween 1 and 10:","");
+  if (cats == 7) {
+    alert("Great job");
+  } else {
+    alert("Try again");
+  }
+</script>
+<p>Thank you for playing my guessing game today.</p>
+<style>
+p {
+  font-size: 30px;
+}
+</style>
+</body>
+</html>
