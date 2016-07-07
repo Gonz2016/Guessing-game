@@ -1,3 +1,5 @@
+//TODO refactor our question into a function
+
 var score = 0;
 var userName = prompt("What is your name?");
 alert("Nice to meet you " + userName + " lets play!");
