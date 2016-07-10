@@ -1,12 +1,10 @@
 //TODO refactor our question into a function
 var answer = prompt("Do you want to play a game?");
-//check if answer is yes or no
-//if is yes contunue with the game
-//if is no stop
-if (answer == "yes") {
-  alert("continue")
+if (answer.toLowerCase() == "yes") {
+  alert("continue");
 } else {
-  alert("end")
+  alert("end");
+  throw '';
 }
 var score = 0;
 var userName = prompt("What is your name?");
