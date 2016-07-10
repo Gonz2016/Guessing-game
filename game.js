@@ -1,26 +1,34 @@
 //TODO refactor our question into a function
-
+var answer = prompt("Do you want to play a game?");
+//check if answer is yes or no
+//if is yes contunue with the game
+//if is no stop
+if (answer == "yes") {
+  alert("continue")
+} else {
+  alert("end")
+}
 var score = 0;
 var userName = prompt("What is your name?");
 alert("Nice to meet you " + userName + " lets play!");
 var brothers = prompt("Guess how many brothers do I have? between 1 and 5:","");
 if (brothers == 3) {
   alert("Great Job");
-  score = 1;
+  score += 1;
 } else {
   alert("Try again");
 }
 var sisters = prompt ("How many sisters do I have? between 1 and 7:","");
 if (sisters == 5) {
   alert("Great job");
-  score = 2;
+  score += 1;
 } else {
   alert("Try again");
 }
 var children = prompt("How many childrem do I have? between 1 and 10:","");
 if (children == 7) {
   alert("Great job");
-  score = 3;
+  score += 1;
 } else {
   alert("Try again");
 }
@@ -28,7 +36,7 @@ var cats = prompt("How many cats do I have? between 0 and 5:","")
 console.log(cats)
 if (cats == 3) {
   alert("Great job");
-  score = 4;
+  score += 1;
 } else if (cats < 3) {
   console.log(score);
     alert("number too low");
