@@ -1,4 +1,5 @@
 //TODO refactor our question into a function
+
 var answer = prompt("Do you want to play a game?");
 if (answer.toLowerCase() == "yes") {
   alert("continue");
@@ -13,10 +14,16 @@ alert("Nice to meet you " + userName + " lets play!");
 function ask(question,correctAnswer) {
   var answer = prompt(question,"");
   if (answer == correctAnswer) {
-    alert("Great Job");
+    var p = document.createElement("p");
+    p.innerHTML="Good job";
+    p.style.backgroundColor="green";
+    document.getElementById('answers').appendChild(p);
     score += 1;
   } else {
-    alert("Try again");
+    var p = document.createElement("p");
+    p.innerHTML="Try again";
+    p.style.backgroundColor="red";
+    document.getElementById('answers').appendChild(p);
   }
 }
 
